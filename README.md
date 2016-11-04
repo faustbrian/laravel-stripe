@@ -119,7 +119,7 @@ App::make('Foo')->bar($params);
 
 ## Documentation
 
-There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [the official Stripe package](https://github.com/stripe/Stripe-PHP-SDK).
+There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [the official Stripe package](https://github.com/stripe/stripe-php).
 
 ## Security
 
