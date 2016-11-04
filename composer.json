@@ -1,0 +1,44 @@
+{
+    "name": "faustbrian/laravel-stripe",
+    "description": "A Stripe bridge for Laravel",
+    "keywords": ["laravel", "framework", "Laravel-Stripe", "Laravel Stripe", "Brian Faust", "faustbrian"],
+    "license": "MIT",
+    "authors": [{
+        "name": "Brian Faust",
+        "email": "hello@brianfaust.de",
+        "homepage": "https://brianfaust.de",
+        "role": "Developer"
+    }],
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "illuminate/support": "5.1.* || 5.2.* || 5.3.*",
+        "stripe/stripe-php": "^4.1"
+    },
+    "require-dev": {
+        "graham-campbell/testbench": "^3.1",
+        "mockery/mockery": "^0.9.4",
+        "phpunit/phpunit": "^5.0",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "BrianFaust\\Stripe\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BrianFaust\\Tests\\Stripe\\": "tests"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
