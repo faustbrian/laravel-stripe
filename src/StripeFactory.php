@@ -1,8 +1,18 @@
 <?php
 
+/*
+ * This file is part of Laravel Stripe.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Stripe;
 
 use InvalidArgumentException;
+
 // use Stripe\Stripe;
 
 class StripeFactory
@@ -35,7 +45,7 @@ class StripeFactory
         $keys = ['key'];
 
         foreach ($keys as $key) {
-            if (!array_key_exists($key, $config)) {
+            if (! array_key_exists($key, $config)) {
                 throw new InvalidArgumentException("Missing configuration key [$key].");
             }
         }
