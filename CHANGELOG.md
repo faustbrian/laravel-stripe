@@ -2,19 +2,8 @@
 
 All Notable changes to `faustbrian/laravel-stripe` will be documented in this file.
 
-## NEXT - YYYY-MM-DD
+## 1.0.1 (07/11/2016)
+- Add missing dependency
 
-### Added
-- Nothing
-
-### Deprecated
-- Nothing
-
-### Fixed
-- Nothing
-
-### Removed
-- Nothing
-
-### Security
-- Nothing
+## 1.0.0 (04/11/2016)
+- First release
