@@ -24,8 +24,6 @@ namespace BrianFaust\Stripe;
 
 use InvalidArgumentException;
 
-// use Stripe\Stripe;
-
 class StripeFactory
 {
     /**
@@ -33,9 +31,9 @@ class StripeFactory
      *
      * @param array $config
      *
-     * @return \Stripe\Stripe
+     * @return \BrianFaust\Stripe\Stripe
      */
-    public function make(array $config)
+    public function make(array $config): Stripe
     {
         $config = $this->getConfig($config);
 
@@ -51,7 +49,7 @@ class StripeFactory
      *
      * @return array
      */
-    protected function getConfig(array $config)
+    protected function getConfig(array $config): array
     {
         $keys = ['key'];
 
@@ -69,9 +67,9 @@ class StripeFactory
      *
      * @param array $auth
      *
-     * @return \Stripe\Stripe
+     * @return \BrianFaust\Stripe\Stripe
      */
-    protected function getClient(array $auth)
+    protected function getClient(array $auth): Stripe
     {
         return new Stripe($auth['key']);
     }

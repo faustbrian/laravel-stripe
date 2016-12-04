@@ -52,7 +52,7 @@ class StripeServiceProvider extends ServiceProvider
     /**
      * Register the factory class.
      */
-    protected function registerFactory()
+    protected function registerFactory(): void
     {
         $this->app->singleton('stripe.factory', function () {
             return new StripeFactory();
@@ -64,7 +64,7 @@ class StripeServiceProvider extends ServiceProvider
     /**
      * Register the manager class.
      */
-    protected function registerManager()
+    protected function registerManager(): void
     {
         $this->app->singleton('stripe', function (Container $app) {
             $config = $app['config'];
@@ -79,7 +79,7 @@ class StripeServiceProvider extends ServiceProvider
     /**
      * Register the bindings.
      */
-    protected function registerBindings()
+    protected function registerBindings(): void
     {
         $this->app->bind('stripe.connection', function (Container $app) {
             $manager = $app['stripe'];

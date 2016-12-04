@@ -54,7 +54,7 @@ class StripeManager extends AbstractManager
      *
      * @return mixed
      */
-    protected function createConnection(array $config)
+    protected function createConnection(array $config): Stripe
     {
         return $this->factory->make($config);
     }
@@ -64,7 +64,7 @@ class StripeManager extends AbstractManager
      *
      * @return string
      */
-    protected function getConfigName()
+    protected function getConfigName(): string
     {
         return 'stripe';
     }
@@ -74,7 +74,7 @@ class StripeManager extends AbstractManager
      *
      * @return \BrianFaust\Stripe\StripeFactory
      */
-    public function getFactory()
+    public function getFactory(): StripeFactory
     {
         return $this->factory;
     }
