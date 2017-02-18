@@ -9,8 +9,6 @@
  * file that was distributed with this source code.
  */
 
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Stripe.
  *
@@ -33,7 +31,7 @@ class StripeFactory
      *
      * @return \BrianFaust\Stripe\Stripe
      */
-    public function make(array $config): Stripe
+    public function make(array $config)
     {
         $config = $this->getConfig($config);
 
@@ -49,7 +47,7 @@ class StripeFactory
      *
      * @return array
      */
-    protected function getConfig(array $config): array
+    protected function getConfig(array $config)
     {
         $keys = ['key'];
 
@@ -69,7 +67,7 @@ class StripeFactory
      *
      * @return \BrianFaust\Stripe\Stripe
      */
-    protected function getClient(array $auth): Stripe
+    protected function getClient(array $auth)
     {
         return new Stripe($auth['key']);
     }
