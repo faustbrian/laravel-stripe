@@ -9,8 +9,6 @@
  * file that was distributed with this source code.
  */
 
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Stripe.
  *
@@ -31,7 +29,7 @@ class Stripe extends Facade
      *
      * @return string
      */
-    protected static function getFacadeAccessor(): string
+    protected static function getFacadeAccessor()
     {
         return 'stripe';
     }
