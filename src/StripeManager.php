@@ -9,8 +9,6 @@
  * file that was distributed with this source code.
  */
 
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Stripe.
  *
@@ -54,7 +52,7 @@ class StripeManager extends AbstractManager
      *
      * @return mixed
      */
-    protected function createConnection(array $config): Stripe
+    protected function createConnection(array $config)
     {
         return $this->factory->make($config);
     }
@@ -64,7 +62,7 @@ class StripeManager extends AbstractManager
      *
      * @return string
      */
-    protected function getConfigName(): string
+    protected function getConfigName()
     {
         return 'stripe';
     }
@@ -74,7 +72,7 @@ class StripeManager extends AbstractManager
      *
      * @return \BrianFaust\Stripe\StripeFactory
      */
-    public function getFactory(): StripeFactory
+    public function getFactory()
     {
         return $this->factory;
     }
