@@ -1,5 +1,7 @@
 # Laravel Stripe
 
+I would appreciate you taking the time to look at my [Patreon](https://www.patreon.com/faustbrian) and considering to support me if I'm saving you some time with my work.
+
 > A [Stripe](https://stripe.com) bridge for Laravel.
 
 ## Installation
