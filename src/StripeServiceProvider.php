@@ -1,8 +1,6 @@
 <?php
 
 
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Stripe.
  *
@@ -22,7 +20,7 @@ class StripeServiceProvider extends ServiceProvider
     /**
      * Boot the service provider.
      */
-    public function boot(): void
+    public function boot()
     {
         $source = realpath(__DIR__.'/../config/stripe.php');
 
@@ -34,7 +32,7 @@ class StripeServiceProvider extends ServiceProvider
     /**
      * Register the service provider.
      */
-    public function register(): void
+    public function register()
     {
         $this->registerFactory();
         $this->registerManager();
@@ -44,7 +42,7 @@ class StripeServiceProvider extends ServiceProvider
     /**
      * Register the factory class.
      */
-    protected function registerFactory(): void
+    protected function registerFactory()
     {
         $this->app->singleton('stripe.factory', function () {
             return new StripeFactory();
@@ -56,7 +54,7 @@ class StripeServiceProvider extends ServiceProvider
     /**
      * Register the manager class.
      */
-    protected function registerManager(): void
+    protected function registerManager()
     {
         $this->app->singleton('stripe', function (Container $app) {
             $config = $app['config'];
@@ -71,7 +69,7 @@ class StripeServiceProvider extends ServiceProvider
     /**
      * Register the bindings.
      */
-    protected function registerBindings(): void
+    protected function registerBindings()
     {
         $this->app->bind('stripe.connection', function (Container $app) {
             $manager = $app['stripe'];
@@ -87,7 +85,7 @@ class StripeServiceProvider extends ServiceProvider
      *
      * @return string[]
      */
-    public function provides(): array
+    public function provides()
     {
         return [
             'stripe',

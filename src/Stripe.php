@@ -1,8 +1,6 @@
 <?php
 
 
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Stripe.
  *
@@ -23,7 +21,7 @@ class Stripe
         $this->setApiKey($apiKey);
     }
 
-    public function __call(string $method, array $arguments)
+    public function __call($method, array $arguments)
     {
         $sdkClass = substr($method, 3);
 
