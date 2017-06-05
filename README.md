@@ -12,18 +12,6 @@ Require this package, with [Composer](https://getcomposer.org/), in the root dir
 $ composer require faustbrian/laravel-stripe
 ```
 
-Add the service provider to `config/app.php` in the `providers` array.
-
-```php
-BrianFaust\Stripe\StripeServiceProvider::class
-```
-
-If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in `config/app.php` to your aliases array.
-
-```php
-'Stripe' => BrianFaust\Stripe\Facades\Stripe::class
-```
-
 ## Configuration
 
 Laravel Stripe requires connection configuration. To get started, you'll need to publish all vendor assets:
@@ -123,19 +111,11 @@ App::make('Foo')->bar($params);
 
 There are other classes in this package that are not documented here. This is because the package is a Laravel wrapper of [the official Stripe package](https://github.com/stripe/stripe-php).
 
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
 ## Testing
 
 ``` bash
 $ phpunit
 ```
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 
