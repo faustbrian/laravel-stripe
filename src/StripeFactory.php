@@ -43,7 +43,7 @@ class StripeFactory
         $keys = ['key'];
 
         foreach ($keys as $key) {
-            if (!array_key_exists($key, $config)) {
+            if (! array_key_exists($key, $config)) {
                 throw new InvalidArgumentException("Missing configuration key [$key].");
             }
         }
