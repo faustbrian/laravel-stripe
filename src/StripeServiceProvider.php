@@ -11,8 +11,8 @@
 
 namespace BrianFaust\Stripe;
 
-use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Container\Container;
 
 class StripeServiceProvider extends ServiceProvider
 {
