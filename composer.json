@@ -9,15 +9,15 @@
         "homepage": "https://brianfaust.me"
     }],
     "require": {
-        "php": "^7.0",
-        "illuminate/support": "5.3.* || 5.4.* || 5.5.*",
-        "graham-campbell/manager": "^2.4",
-        "stripe/stripe-php": "^4.1"
+        "php": "^7.1",
+        "graham-campbell/manager": "^3.0",
+        "illuminate/support": "5.5.*",
+        "stripe/stripe-php": "^5.9"
     },
     "require-dev": {
-        "graham-campbell/testbench": "^3.3",
-        "mockery/mockery": "^0.9.5",
-        "phpunit/phpunit": "^6.1"
+        "graham-campbell/testbench": "^5.0",
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^6.5"
     },
     "autoload": {
         "psr-4": {
