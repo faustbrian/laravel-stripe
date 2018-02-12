@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Stripe;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Container\Container;
+use Illuminate\Support\ServiceProvider;
 
 class StripeServiceProvider extends ServiceProvider
 {
