@@ -1,5 +1,10 @@
 # Laravel Stripe
 
+[![Build Status](https://img.shields.io/travis/faustbrian/Laravel-Stripe/master.svg?style=flat-square)](https://travis-ci.org/faustbrian/Laravel-Stripe)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/faustbrian/laravel-stripe.svg?style=flat-square)]()
+[![Latest Version](https://img.shields.io/github/release/faustbrian/Laravel-Stripe.svg?style=flat-square)](https://github.com/faustbrian/Laravel-Stripe/releases)
+[![License](https://img.shields.io/packagist/l/faustbrian/Laravel-Stripe.svg?style=flat-square)](https://packagist.org/packages/faustbrian/Laravel-Stripe)
+
 > A [Stripe](https://stripe.com) bridge for Laravel.
 
 ## Installation
@@ -117,7 +122,7 @@ $ phpunit
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to Brian Faust at hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to hello@brianfaust.me. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
