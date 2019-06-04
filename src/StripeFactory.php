@@ -5,13 +5,13 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Stripe.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Stripe;
+namespace Artisanry\Stripe;
 
 use InvalidArgumentException;
 
@@ -22,7 +22,7 @@ class StripeFactory
      *
      * @param array $config
      *
-     * @return \BrianFaust\Stripe\Stripe
+     * @return \Artisanry\Stripe\Stripe
      */
     public function make(array $config): Stripe
     {
@@ -58,7 +58,7 @@ class StripeFactory
      *
      * @param array $auth
      *
-     * @return \BrianFaust\Stripe\Stripe
+     * @return \Artisanry\Stripe\Stripe
      */
     protected function getClient(array $auth): Stripe
     {

@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/laravel-stripe",
+    "name": "artisanry/stripe",
     "description": "A Stripe bridge for Laravel",
-    "keywords": ["laravel", "framework", "Laravel-Stripe", "Laravel Stripe", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "Laravel-Stripe", "Laravel Stripe"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.1",
@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Stripe\\": "src/"
+            "Artisanry\\Stripe\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Stripe\\": "tests"
+            "Artisanry\\Tests\\Stripe\\": "tests"
         }
     },
     "config": {
@@ -39,10 +39,10 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\Stripe\\StripeServiceProvider"
+                "Artisanry\\Stripe\\StripeServiceProvider"
             ],
             "aliases": {
-                "Stripe": "BrianFaust\\Stripe\\Facades\\Stripe"
+                "Stripe": "Artisanry\\Stripe\\Facades\\Stripe"
             }
         }
     },
