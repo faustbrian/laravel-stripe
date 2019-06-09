@@ -29,7 +29,7 @@ class StripeManager extends AbstractManager
      * Create a new Stripe manager instance.
      *
      * @param \Illuminate\Contracts\Config\Repository $config
-     * @param \Artisanry\Stripe\StripeFactory        $factory
+     * @param \Artisanry\Stripe\StripeFactory         $factory
      */
     public function __construct(Repository $config, StripeFactory $factory)
     {
