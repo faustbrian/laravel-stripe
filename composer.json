@@ -17,7 +17,7 @@
         "php": "^7.2",
         "graham-campbell/manager": "^4.0.0",
         "illuminate/support": "^5.8|^6.0",
-        "stripe/stripe-php": "^5.9"
+        "stripe/stripe-php": "^7.0.0"
     },
     "require-dev": {
         "graham-campbell/testbench": "^5.0",
